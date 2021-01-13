@@ -1,0 +1,48 @@
+.listform-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0.5rem;
+  background-color: #ebecf0;
+  border-radius: 7px;
+  width: 300px;
+  margin: 0 0.7rem;
+}
+.listform-input {
+  padding: 0.4rem 0.6rem;
+  width: 100%;
+  border: #0079bf solid 0.201rem;
+  font-size: 1.3rem;
+  margin-bottom: 0.7rem;
+}
+
+.listform-addlist-button {
+  background-color: #5aac44;
+  padding: 0.4rem 0.6rem;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 2px;
+  color: #ebecf0;
+  font-weight: 500;
+  outline: none;
+  cursor: pointer;
+  transition: 2s;
+  margin-right: 0.7rem;
+}
+.listform-addlist-button:hover {
+  background-color: #61bd4f;
+}
+
+.listform-cross-button {
+  border: none;
+  background-color: inherit;
+  font-size: 1.3rem;
+  outline: none;
+  cursor: pointer;
+}
+
+.listform-button-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}

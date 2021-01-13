@@ -1,0 +1,13 @@
+.card-container {
+  background-color: aliceblue;
+  width: 100%;
+  padding: 0.6rem 0.8rem;
+  margin: 0.7rem;
+  width: 100%;
+  box-shadow: 0 1.2px 3.8px -53px rgba(0, 0, 0, 0.056),
+    0 2.9px 9.2px -53px rgba(0, 0, 0, 0.081),
+    0 5.4px 17.3px -53px rgba(0, 0, 0, 0.1),
+    0 9.6px 30.8px -53px rgba(0, 0, 0, 0.119),
+    0 18px 57.7px -53px rgba(0, 0, 0, 0.144),
+    0 43px 138px -53px rgba(0, 0, 0, 0.2);
+}
