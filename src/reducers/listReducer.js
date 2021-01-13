@@ -31,6 +31,14 @@ const listReducer = (state = initialState, action) => {
       cState[k].cards.push({ title: payload.cardTitle, id: payload.cardId });
       return [...cState];
 
+    case "DELETE_CARD_FROM_LIST":
+      const dupState = [...state];
+      const listIndex = dupState.findIndex((s) => s.id === payload.listId);
+      const cardIndex = dupState[listIndex].cards.findIndex(
+        (s) => s.id === payload.cardId
+      );
+      dupState[listIndex].cards.splice(cardIndex, 1);
+      return [...dupState];
     default:
       return state;
   }

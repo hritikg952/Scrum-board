@@ -52,51 +52,44 @@ function List({ title, id }) {
           </h4>
         )}
       </div>
-      <div>
-        {cardsInListState[indexOfList].cards.length > 0 ? (
-          <>
-            {cardsInListState[indexOfList].cards.map((card, index) => {
-              return (
-                <Card
-                  title={card.title}
-                  id={card.id}
-                  listId={id}
-                  index={index}
-                  key={card.id}
-                />
-              );
-            })}
 
-            {cardForm ? (
-              <>
-                <CardForm toggleCardForm={toggleCardForm} listId={id} />
-              </>
-            ) : (
-              <button
-                className="list-button"
-                onClick={(e) => toggleCardForm(e)}
-              >
-                Add Another Card
-              </button>
-            )}
-          </>
-        ) : (
-          <>
-            {cardForm ? (
-              <>
-                <CardForm toggleCardForm={toggleCardForm} listId={id} />
-              </>
-            ) : (
-              <button
-                className="list-button"
-                onClick={(e) => toggleCardForm(e)}
-              >
-                Add Another Card
-              </button>
-            )}
-          </>
-        )}
-      </div>
+      {cardsInListState[indexOfList].cards.length > 0 ? (
+        <>
+          {cardsInListState[indexOfList].cards.map((card, index) => {
+            return (
+              <Card
+                title={card.title}
+                id={card.id}
+                listId={id}
+                index={index}
+                key={card.id}
+              />
+            );
+          })}
+
+          {cardForm ? (
+            <>
+              <CardForm toggleCardForm={toggleCardForm} listId={id} />
+            </>
+          ) : (
+            <button className="list-button" onClick={(e) => toggleCardForm(e)}>
+              Add Another Card
+            </button>
+          )}
+        </>
+      ) : (
+        <>
+          {cardForm ? (
+            <>
+              <CardForm toggleCardForm={toggleCardForm} listId={id} />
+            </>
+          ) : (
+            <button className="list-button" onClick={(e) => toggleCardForm(e)}>
+              Add Another Card
+            </button>
+          )}
+        </>
+      )}
     </div>
   );
 }

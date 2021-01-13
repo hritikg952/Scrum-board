@@ -1,13 +1,18 @@
 .card-container {
-  background-color: aliceblue;
-  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
   padding: 0.6rem 0.8rem;
-  margin: 0.7rem;
+  margin: 0.7rem 0;
   width: 100%;
-  box-shadow: 0 1.2px 3.8px -53px rgba(0, 0, 0, 0.056),
-    0 2.9px 9.2px -53px rgba(0, 0, 0, 0.081),
-    0 5.4px 17.3px -53px rgba(0, 0, 0, 0.1),
-    0 9.6px 30.8px -53px rgba(0, 0, 0, 0.119),
-    0 18px 57.7px -53px rgba(0, 0, 0, 0.144),
-    0 43px 138px -53px rgba(0, 0, 0, 0.2);
+  border: black solid 4px;
+}
+
+.card-delete-show {
+  display: block;
+  cursor: pointer;
+}
+.card-delete-hide {
+  display: none;
 }
